@@ -59,7 +59,7 @@ public class WeatherActivity extends AppCompatActivity {
             //有缓存时直接解析天气数据
             Weather weather = Utility.handleWeatherResponse(weatherString);
             showWeatherInfo(weather);
-        }else{0
+        }else{
             //无缓存时区服务器查询天气
             String weatherId = getIntent().getStringExtra("weather_id");
             weatherLayout.setVisibility(View.GONE);
